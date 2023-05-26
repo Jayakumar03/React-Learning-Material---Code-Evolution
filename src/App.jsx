@@ -1,5 +1,6 @@
 // import Props from './components/props'
-import { State } from './components/state'
+// import { State } from './components/state'
+import { Get } from "./components/api";
 import './App.css'
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
 
         {/* state */}
 
-        <State />
-
+        {/* <State /> */}
+        
+         <Get />
         
       </div>
     </>

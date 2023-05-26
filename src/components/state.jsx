@@ -2,8 +2,9 @@ import{useState} from 'react'
 
 export const State = () => {
 
-    function increment() {
+    function increment(event) {
         setState(state + 1)
+        console.log(event)
         
     }
 
@@ -18,7 +19,7 @@ const [state,setState] = useState(0)
 return(
 <div>
 <h1>{state}</h1>
-<button onClick={increment}>click me increment</button>
+<button onClick={() => increment(event)}>click me increment</button>
 <button onClick={decrement}>click me decrement</button>
 
 
