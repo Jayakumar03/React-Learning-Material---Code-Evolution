@@ -1,5 +1,5 @@
 
-const Prop = (props) => {
+export const Prop = (props) => {
     return (
         <>
     <h1>hello!! {props.name} a.k.a {props.setHeroName}</h1>
